@@ -50,10 +50,19 @@ class _SplashScreenState extends State<SplashScreen>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Text(
+              "APK by Dewa Nazwa Marna Putra", // ⬅️ Nama kamu di atas logo
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
+            ),
+            const SizedBox(height: 20),
             RotationTransition(
               turns: _animation,
               child: Image.asset(
-                'assets/1213.png', // Ganti dengan nama file gambar kamu
+                'assets/1213.png', // Logo yang muter
                 width: 100,
                 height: 100,
               ),
